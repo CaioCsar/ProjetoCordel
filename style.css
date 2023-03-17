@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* sessao de titulo */
+section.module.content.titulo{
+    background-color: #000;
+    text-align: center;
+}
+
+
+h1.titulo, h2.subtitulo{
+    color: rgb(233, 231, 231);
+}
+
+h1.titulo{
+    font-size: 30px;
+}
+
+h2.subtitulo{
+    font-size: 15px !important;
+}
+
+/* importar fonts */
+@font-face {
+    font-family: Passion-One;
+    src: url("PassionOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Sriracha;
+    src: url("Sriracha-Regular.ttf");
+}
+
+/* estrofes */
+
+p.estrofe{
+    font-family: 'Sriracha', cursive;
+    font-size: 20px;
+    width: fit-content;
+    margin-left: 40%;
+    line-height: 2.5;
+    color: white;
+    background-color: #00000070;
+    padding: 20px;
+}
+
+p.terceira.estrofe{
+    text-align: justify;
+
+}
+
+/*  */
+div.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 900;
+    color: #000;
+}
+
+main{
+    display: block;
+    background-color: #FFF;
+}
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+
+
+/* config da segunda sessao apos 1 imagem */
+section.module.content{
+    padding: 40px 0;
+    background-color: antiquewhite;
+}
+
+/* config da primeira sessao */
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+/* fundo da primeira sessao */
+section.module.parallax-2{
+    background-image: url(./imagens/background001.jpg);
+    height: 110vh !important;
+}
+
+section.module.parallax-3{
+    height: 110vh !important;
+}
+
+section.module.parallax-1{
+    background-image: url("");
+    height: 90vh !important;
+    background-size: contain;
+}
+
+/* sombra no final da sessao */
+section.module.parallax:after{
+    content: "" ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #00000088 100%);
+}
+
+/* segunda sessao principal */
+section.module.parallax-4{
+    background-image: url(./imagens/background002.jpg);
+}
